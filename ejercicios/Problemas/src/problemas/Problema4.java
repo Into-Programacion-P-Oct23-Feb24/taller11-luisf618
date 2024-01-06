@@ -5,6 +5,7 @@
  */
 package problemas;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -45,6 +46,7 @@ public class Problema4 {
     }
 
     public static void calcularValorLuz(String nombre, String cedula) {
+        entrada.useLocale(Locale.US);
         double valorKilowatio;
         double numKilowatios;
         double valorTotal;
@@ -59,6 +61,7 @@ public class Problema4 {
 
     public static void calcularPredio(String nombreCliente,
             String cedulaCliente) {
+        entrada.useLocale(Locale.US);
         double valorInmueble;
         double valorPredio;
         System.out.println("Ingrese el valor del inmueble:");
